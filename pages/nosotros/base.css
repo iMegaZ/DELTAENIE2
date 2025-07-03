@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+    min-height: 100vh;
+    background-image: url("../../key-art.gif");
+    background-attachment: fixed;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+/* Capa oscura para mejorar contraste */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: center;
+    /* Separar izquierda y derecha */
+    align-items: center;
+    background-color: #001f3f;
+    padding: 40px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.nav-left,
+.nav-right {
+    position: fixed;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-button {
+    background: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+.nav-button:hover {
+    color: #00ffe0;
+}
+
+/* Sección principal */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    /* espacio para la barra */
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Ajustá el 0.5 según cuán oscuro querés el fondo */
+    z-index: 0;
+}
+
+@font-face {
+    font-family: 'Determination';
+    src: url('fonts/DeterminationMonoWebRegular-Z5oq.ttf') format('truetype');
+}
+
+.logo-button img {
+    height: 100px;
+    image-rendering: pixelated;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.logo-button {
+    position: fixed;
+    top: 0px;
+    /* distancia desde arriba */
+    left: 10px;
+    /* o usá right: 10px; para la esquina derecha */
+    z-index: 1001;
+    /* por encima de la capa oscura */
+}
+
+.logo-button img:hover {
+    transform: scale(1.05);
+}
+
+.bottom-navbar {
+    background-color: #001f3f;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 15px 0;
+    box-shadow: 0 -2px 10px rgba(0, 255, 224, 0.3);
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.bottom-navbar a img {
+    height: 30px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.bottom-navbar a:hover img {
+    transform: scale(1.2);
+    filter: brightness(0) invert(1) drop-shadow(0 0 5px #00ffe0);
+}

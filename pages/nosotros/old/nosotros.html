@@ -1,0 +1,61 @@
+<html>
+    <title>Sobre nosotros</title>
+     <link rel="icon" href="../../favicon.png" type="image/png">
+     <link rel="stylesheet" href="styles.css">
+     <body style="background-color: black;">
+         <!-- La capa oscura va primero -->
+  <div class="overlay"></div>
+
+  <!-- Barra de navegación -->
+  <div class="navbar">
+     <a href="../../index.html" class="logo-button" title="Volver a la página principal">
+  <img src="../../favicon.png" alt="DeltaÑ">
+</a>
+</div>
+<main class="nosotros-content">
+    <h1>Sobre Nosotros</h1>
+    <p>
+      Somos un grupo de fans apasionados que decidimos traducir <strong>Deltarune</strong> al español <strong>NEUTRO</strong>
+    </p>
+    <p>
+      Nuestra motivación para hacer este <strong>PARCHE</strong> es simple, queremos hacer que los hispanoshablantes que no tengan mucho conocimienton del inglés puedan disfrutar de este juego al máximo, sin perderse ningún detalle de la historia, los personajes y el humor que lo hacen tan especial.
+    </p>
+    <p>
+      Este <strong>PARCHE</strong> esta desarrollado por una comunidad de personas con ganas de llevar <strong>Deltaruñe</strong>, pero eso no significa que el proyecto sea malo.
+  </main>
+  <main>
+    </p>
+    <main class="nosotros-content2">
+    <h1>Creditos a los que <strong>CHAMBEAN</strong> en el proyecto</h1>
+    <p>
+     TRADUCCTORES:
+      <ul>
+        <li>Kali (Fundador del Proyecto)</li>
+        <li>! Kyo (Traductor, gráficos y creador de esta web)</li>
+        <li>Loex (Traductor y gráficos para el juego)</li>
+        <li>JoaTank (Traductor)</li>
+        <li>Amini (Traductor)</li>
+        <li>Añadiré a los demás cuando manden sus partes >:v</li>
+    </p>
+    <p>
+      Muchisimas gracias a todos los que han contribuido al proyecto, ya sea con traducciones, correcciones o simplemente apoyando la iniciativa. Cada uno de ustedes ha hecho posible que este <strong>PARCHE</strong> sea una realidad.
+    </p>
+    <p>
+      Con amor, el equipo de traducción de <strong>Delta Ñ</strong>.
+    </p>
+  </main>
+  <!-- Agregá más canales según necesites -->
+</div>
+<audio id="hover-sound" src="../../SFX/Effect_Tick.ogg" preload="auto"></audio>
+<script>
+  const hoverSound = document.getElementById("hover-sound");
+
+  document.querySelectorAll(".nav-button, .logo-button").forEach(el => {
+    el.addEventListener("mouseenter", () => {
+      hoverSound.currentTime = 0; // Reinicia el sonido si ya se estaba reproduciendo
+      hoverSound.play();
+    });
+  });
+</script>
+     </body>
+    </html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contacto</title>
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="descargas.css">
+  <link rel="icon" href="../../favicon.png" type="image/png">
+</head>
+<body>
+  <!-- La capa oscura va primero -->
+  <div class="overlay"></div>
+
+  <!-- Barra de navegación -->
+  <div class="navbar">
+       <a href="../../index.html" class="logo-button" title="Volver a la página principal">
+  <img src="../../favicon.png" alt="DeltaÑ">
+</a>
+    <div class="nav-left">
+<button class="nav-button" title="Descargá los capítulos disponibles" onclick="location.href='../../pages/descargar/descargas.html'">DESCARGAS</button>
+<button class="nav-button" title="Conocé al equipo detrás del proyecto" onclick="location.href='../../pages/nosotros/nosotros.html'">EQUIPO</button>
+<!--button class="nav-button" title="Nuestras razones y motivaciones" onclick="location.href='nosotros.html'">NOSOTROS</button-->
+<button class="nav-button" title="Preguntas frecuentes y cómo contactarnos" onclick="location.href='../../pages/contacto/contacto.html'">FAQ / CONTACTO</button>
+
+    </div>
+    
+    <div class="nav-right">
+    </div>
+  </div>
+
+  <!-- Contenido principal -->
+  <main class="nosotros-content">
+    <h1>¿Quieres contactarnos o entrar en nuestra comunidad?</h1>
+    <p>
+      Tenemos un server de <strong><a href="https://discord.gg/MTjWtnCJkx" target="_blank">Discord</a></strong> donde puedes hablar con la comunidad y con los participantes del proyecto. Además de poder enterarte de los avances antes.
+    </p>
+    <p>
+      También tenemos una cuenta de <strong><a href="https://x.com/DELTALATAN" target="_blank">Twitter/X</a></strong> donde publicamos noticias y avances del proyecto. Puedes seguirnos para estar al tanto de las actualizaciones y novedades. Encuentranos cómo <strong>@DELTALATAN</strong>.
+    </p>
+    <p>
+      También tenemos <strong><a href="https://www.tiktok.com/@kyo_one0" target="_blank">TikTok</a></strong> dónde subimos contenido relacionado con el proyecto y otros temas de interés. Puedes seguirnos para ver videos y actualizaciones divertidas.
+  </main>
+  <main>
+    </p>
+    <!--main class="nosotros-content2">
+    <h1>Creditos a los que <strong>CHAMBEAN</strong> en el proyecto</h1>
+    <p>
+     TRADUCCTORES:
+      <ul>
+        <li>Kali (Fundador del Proyecto)</li>
+        <li>! Kyo (Traductor, gráficos y creador de esta web)</li>
+        <li>Loex (Traductor y gráficos para el juego)</li>
+        <li>JoaTank (Traductor)</li>
+        <li>Amini (Traductor)</li>
+        <li>Añadiré a los demás cuando manden sus partes >:v</li>
+    </p>
+    <p>
+      Muchisimas gracias a todos los que han contribuido al proyecto, ya sea con traducciones, correcciones o simplemente apoyando la iniciativa. Cada uno de ustedes ha hecho posible que este <strong>PARCHE</strong> sea una realidad.
+    </p>
+    <p>
+      Con amor, el equipo de traducción de <strong>Delta Ñ</strong>.
+    </div>
+  </main-->
+  <audio id="hover-sound" src="../../SFX/Effect_Tick.ogg" preload="auto"></audio>
+<script>
+  const hoverSound = document.getElementById("hover-sound");
+
+  document.querySelectorAll(".nav-button, .nav-left, .logo-button, .bottom-navbar").forEach(el => {
+    el.addEventListener("mouseenter", () => {
+      hoverSound.currentTime = 0; // Reinicia el sonido si ya se estaba reproduciendo
+      hoverSound.play();
+    });
+  });
+</script>
+<footer class="bottom-navbar">
+  <a href="https://twitter.com/DELTALATAN" target="_blank" title="Twitter">
+    <img src="../../img/twitter.png" alt="Twitter">
+  </a>
+  <a href="https://discord.gg/MTjWtnCJkx" target="_blank" title="Discord">
+    <img src="../../img/discord.png" alt="Discord">
+  </a>
+  <a href="https://www.tiktok.com/@kyo_one0" title="Tiktok">
+    <img src="../../img/tiktok.png" alt="Tiktok">
+  </a>
+</footer>
+
+</body>
+</html>

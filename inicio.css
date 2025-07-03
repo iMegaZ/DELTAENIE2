@@ -1,0 +1,12 @@
+.logo {
+    max-width: 30%;
+    height: auto;
+    image-rendering: pixelated;
+}
+
+.subtitle {
+    font-family: 'Determination', sans-serif;
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: #ffffff;
+}

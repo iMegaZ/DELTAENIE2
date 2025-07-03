@@ -1,0 +1,50 @@
+.wii-menu {
+     position: relative;
+  z-index: 1; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 320px;
+  background-color: #000;
+}
+.nosotros-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 200px auto 100px;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.85);
+  border-radius: 12px;
+  color: white;
+  font-family: 'Determination', sans-serif;
+  box-shadow: 0 0 20px #0daf07;
+  line-height: 1.6;
+}
+
+.nosotros-content h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #0daf07;
+  text-align: center;
+}
+.nosotros-content2 {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 60px auto 100px;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.85);
+  border-radius: 12px;
+  color: white;
+  font-family: 'Determination', sans-serif;
+  box-shadow: 0 0 20px #ff0000;
+  line-height: 1.6;
+}
+
+.nosotros-content2 h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #af0707;
+  text-align: center;
+}

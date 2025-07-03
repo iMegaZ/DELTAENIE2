@@ -1,0 +1,47 @@
+.wii-menu {
+     position: relative;
+  z-index: 1; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px;
+}
+
+.wii-channel {
+  background-color: #111;
+  border: 2px solid #444;
+  border-radius: 12px;
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 0 10px #00ffe0;
+  transition: transform 0.2s ease;
+}
+
+.wii-channel:hover {
+  transform: scale(1.05);
+}
+
+.wii-channel img {
+  width: 100%;
+  border-radius: 8px;
+  image-rendering: pixelated;
+}
+
+.download-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #00ffe0;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.download-button:hover {
+  background-color: #00cccc;
+}
