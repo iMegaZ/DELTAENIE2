@@ -137,3 +137,17 @@ main {
     transform: scale(1.2);
     filter: brightness(0) invert(1) drop-shadow(0 0 5px #00ffe0);
 }
+.contador {
+  font-size: 32px;
+  margin-top: 1px;
+  font-family: 'Determination', monospace;
+  color: white;
+  letter-spacing: 3px;
+}
+
+.mensaje {
+  font-size: 32px;
+  font-family: 'Determination', monospace;
+  color: white;
+  margin-top: 20px;
+}
