@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Delta Ñ</title>
+  <title>Delta Ñ - Deltarune Español</title>
   <link rel="stylesheet" href="base.css">
   <link rel="stylesheet" href="inicio.css">
   <link rel="icon" href="favicon.png" type="image/png">
@@ -32,8 +32,10 @@
   <main>
     <img src="deltaenie.png" alt="Logo Delta Ñ" class="logo">
     <p class="subtitle">(Pronto lanzaremos los capítulos 1,2 y 3)</p>
-    <p class="mensaje">Lanzamiento en:</p>
-<div id="countdown" class="contador">00:00:00:00</div>
+    <p class="mensaje">Trailer:</p>
+  <div class="video-container">
+  <iframe width="480" height="315" src="https://www.youtube.com/embed/lGnlJvYHTr0?si=Y84gyXX17YUXCMye" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
   </main>
   <audio id="hover-sound" src="SFX/Effect_Tick.ogg" preload="auto"></audio>
@@ -57,36 +59,10 @@
   <a href="https://www.tiktok.com/@kyo_one0" title="Tiktok">
     <img src="img/tiktok.png" alt="Tiktok">
   </a>
+  <a href="https://www.youtube.com/@DeltaLatan%C3%91" title="Youtube">
+    <img src="img/youtube.png" alt="Youtube">
+  </a>
 </footer>
-<script>
- const countdown = document.getElementById("countdown");
 
-// 📅 Fecha de lanzamiento (ejemplo: 1 agosto 2025 a las 18:00)
-const targetDate = new Date(2025, 6, 13, 22, 0 , 0); // mes 7 = agosto
-
-function updateCountdown() {
-  const now = new Date();
-  const diff = targetDate - now;
-
-  if (diff <= 0) {
-    countdown.textContent = "¡Ya disponible!";
-    countdown.classList.add("finalizado"); // aplica el tachado en rojo
-    return;
-  }
-
-  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-  const minutes = Math.floor((diff / (1000 * 60)) % 60);
-  const seconds = Math.floor((diff / 1000) % 60);
-
-  countdown.textContent = `${String(days).padStart(2, '0')}:${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
-}
-
-setInterval(updateCountdown, 1000);
-
-
-
-  setInterval(updateCountdown, 1000);
-</script>
 </body>
 </html>
